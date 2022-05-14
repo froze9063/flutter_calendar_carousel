@@ -26,7 +26,7 @@ void main() {
 
     expect(find.text(title), findsOneWidget);
 
-    await tester.tap(find.byType(ElevatedButton));
+    await tester.tap(find.byType(TextButton));
 
     await tester.pump();
 
@@ -72,7 +72,7 @@ void main() {
     )));
 
     // the header FlatButton Should not render
-    final touchableHeader = find.byType(ElevatedButton);
+    final touchableHeader = find.byType(TextButton);
 
     expect(touchableHeader, findsNothing);
   });
