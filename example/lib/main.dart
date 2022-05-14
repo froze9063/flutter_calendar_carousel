@@ -169,7 +169,7 @@ class _MyHomePageState extends State<MyHomePage> {
       todayButtonColor: Colors.transparent,
       todayBorderColor: Colors.green,
       markedDateMoreShowTotal:
-          true, // null for not showing hidden events indicator
+      true, // null for not showing hidden events indicator
 //          markedDateIconMargin: 9,
 //          markedDateIconOffset: 3,
     );
@@ -195,7 +195,7 @@ class _MyHomePageState extends State<MyHomePage> {
       targetDateTime: _targetDateTime,
       customGridViewPhysics: NeverScrollableScrollPhysics(),
       markedDateCustomShapeBorder:
-          CircleBorder(side: BorderSide(color: Colors.yellow)),
+      CircleBorder(side: BorderSide(color: Colors.yellow)),
       markedDateCustomTextStyle: TextStyle(
         fontSize: 18,
         color: Colors.blue,
@@ -262,13 +262,13 @@ class _MyHomePageState extends State<MyHomePage> {
                   children: <Widget>[
                     Expanded(
                         child: Text(
-                      _currentMonth,
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 24.0,
-                      ),
-                    )),
-                    FlatButton(
+                          _currentMonth,
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 24.0,
+                          ),
+                        )),
+                    ElevatedButton(
                       child: Text('PREV'),
                       onPressed: () {
                         setState(() {
@@ -279,7 +279,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         });
                       },
                     ),
-                    FlatButton(
+                    ElevatedButton(
                       child: Text('NEXT'),
                       onPressed: () {
                         setState(() {
